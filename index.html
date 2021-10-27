@@ -11,6 +11,7 @@
 
 <body>
     <div class="container">
+        <!-- Неправльное соблюдение симантики, есть header в HTML5 -->
         <div class="header">
             <div class="logotype">
                 <a href="index.html" class="log">
@@ -19,13 +20,29 @@
                 </a>
             </div>
 
+            <!-- Неправльное соблюдение симантики, есть nav в HTML5 -->
             <div class="nav">
                 <ul class="header-nav__list">
-                    <li class="header-nav__item"><a href="#" class="header-nav__text header-nav__text_active header-nav__text_move">О
-                            комплексе</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__text">Особенности</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__text">Пентхаусы</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__text">Выбрать квартиру</a></li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__text header-nav__text_active header-nav__text_move">
+                            О комплексе
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__text">
+                            Особенности
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__text">
+                            Пентхаусы
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__text">
+                            Выбрать квартиру
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -116,6 +133,9 @@
                     </div>
                 </div>
 
+                <!-- Соблюдение семантики неправльное, а если вдаваться в потробности,
+                то footer это div, а не то что внутри footer, и при этом есть обвёртка из div,
+                и неиспользованный footer__info, странный подход -->
                 <div class="footer">
                     <footer class="footer__info">
                         <div class="footer__text">РАЗРАБОТАНО В MST | 2018</div>
